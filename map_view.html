@@ -1,0 +1,31 @@
+<nav class="uk-navbar">
+	<div class="uk-container-center uk-width-3-4">
+	    <ul ng-hide="user.id" class="uk-navbar-nav">
+	    	<li><a href="#/">CityXplorer</a></li>
+		    <li><a href="#/login">Log in</a></li>
+		    <li><a href="#/register">Register</a></li>
+	    </ul>
+	    <ul ng-show="user.id" class="uk-navbar-nav">
+	    	<li><a href="">CityXplorer</a></li>
+	    	<li><a href="#/fav">Favourites</a></li>
+	    	<div class="uk-navbar-content">{{user.name}}</div>
+	    </ul>
+	    <div class="uk-navbar-flip">
+	        <ul class="uk-navbar-nav">
+	            <li class="uk-parent" data-uk-dropdown>
+	            	<a href="">Places</a>
+
+		            <!-- This is the dropdown -->
+		            <div class="uk-dropdown uk-dropdown-navbar">
+		                <ul data-ng-repeat="place in places" class="uk-nav uk-nav-navbar">
+		                	<li><a href="#/map/{{$index + 1}}">{{place}}</a></li>
+		                </ul>
+		            </div>
+	            </li>
+	        </ul>
+	    </div>
+	</div>
+
+</nav>
+
+<div id="map" style="width: 100%; height: 90%"></div>

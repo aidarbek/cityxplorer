@@ -1,0 +1,29 @@
+<nav class="uk-navbar">
+    <ul class="uk-navbar-nav">
+    	<li><a href="#/">CityXplorer</a></li>
+    	<li><a href="#/register">Register</a></li>
+	</ul>
+</nav>
+<div class="uk-grid">
+
+<div class="uk-container-center uk-width-1-3">
+<div id="login_message">
+</div>
+<form class="uk-form">
+	<fieldset>
+		<legend>Log In</legend>
+		<div class="uk-form-row">
+			<input class="uk-width-1-1"  type="text" placeholder="E-mail" ng-model="user.mail" name="mail" id="mail">
+		</div>
+		<div class="uk-form-row">
+			<input class="uk-width-1-1"  type="password" placeholder="Password" ng-model="user.password" name="password" id="password">
+		</div>
+		<div class="uk-form-row">
+		    <button data-ng-click="login()" class="uk-button-success uk-button-large uk-width-1-1" type="button">
+			    Log in
+	       	</button>
+        </div>
+    </fieldset>
+</form>
+</div>
+</div>
