@@ -3,6 +3,7 @@ Yelp for Astana, Kazakhstan
 
 Allows you to search for the places in Astana. Also, you can leave a review and rate the place.
 
+It's recommendation service here: 
 # Installation guide
 1. Upload these files to your PHP server
 2. Change your MySQL settings in file config.php
