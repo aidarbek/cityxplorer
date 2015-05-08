@@ -1,5 +1,6 @@
 # CityXplorer
 Yelp for Astana, Kazakhstan
+Allows you to search for the places in Astana. Also, you can leave a review and rate the place.
 
 # Installation guide
 1. Upload these files to your PHP server
